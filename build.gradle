@@ -113,7 +113,7 @@ if (gradle.startParameter.taskRequests.any { it.args.contains("apiCompatibility"
 		baseClassForTests = 'org.springframework.github.BaseClass'
 		basePackageForTests = 'com.example.contracttests'
 		// REPO_WITH_JARS is deprecated
-		contractsRepositoryUrl = getProp('REPO_WITH_JARS') ?: getProp('REPO_WITH_BINARIES') ?: 'http://localhost:8081/artifactory/libs-release-local'
+		contractsRepositoryUrl = getProp('REPO_WITH_JARS') ?: getProp('REPO_WITH_BINARIES') ?: 'http://localhost:8084/artifactory/libs-release-local'
 		contractsPath = "/"
 		contractDependency {
 			groupId = project.group
